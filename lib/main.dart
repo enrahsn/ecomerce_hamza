@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'views/screens/on_boarding.dart';
 void main() {
   runApp(const NotesApp());
 }
@@ -8,15 +11,14 @@ class NotesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Your Notes',
+      title: 'Market',
       theme: ThemeData(
         brightness: Brightness.dark,
         fontFamily: 'Poppins',
         useMaterial3: true,
       ),
-      home: const OnBoarding(
-        title: 'Makka Fruit',
-      ),
+      home: const OnBoarding(),
+
     );
   }
 }
