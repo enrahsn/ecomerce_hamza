@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 
 import 'views/screens/on_boarding.dart';
 void main() {
-  runApp(const NotesApp());
+  runApp(const Market());
 }
-class NotesApp extends StatelessWidget {
-  const NotesApp({super.key});
+class Market extends StatelessWidget {
+  const Market({super.key});
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -14,7 +14,7 @@ class NotesApp extends StatelessWidget {
       title: 'Market',
       theme: ThemeData(
         brightness: Brightness.dark,
-        fontFamily: 'Poppins',
+        fontFamily: 'Cairo',
         useMaterial3: true,
       ),
       home: const OnBoarding(),
